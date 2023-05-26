@@ -68,6 +68,7 @@
 		AE58B1CF2A1E8B3E0000D620 = {
 			isa = PBXGroup;
 			children = (
+				AE0311902A1FE7090079F804 /* swiftlint.yml */,
 				AE58B1DA2A1E8B3E0000D620 /* MusicApp */,
 				AE58B1D92A1E8B3E0000D620 /* Products */,
 				76C7BFAB708F99619AC063AB /* Pods */,
@@ -89,7 +90,6 @@
 				AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */,
 				AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */,
 				AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */,
-				AE0311902A1FE7090079F804 /* swiftlint.yml */,
 				AECCB5232A1E905F00255AFC /* R.generated.swift */,
 				AE58B1F02A1E8C080000D620 /* Components */,
 				AE58B1EF2A1E8C010000D620 /* Reusable */,
@@ -136,7 +136,7 @@
 				AE58B1D52A1E8B3E0000D620 /* Frameworks */,
 				AE58B1D62A1E8B3E0000D620 /* Resources */,
 				6F94E57445806D9CED3D55EF /* [CP] Embed Pods Frameworks */,
-				AE03118F2A1FE45A0079F804 /* ShellScript */,
+				AE03118F2A1FE45A0079F804 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -233,7 +233,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE03118F2A1FE45A0079F804 /* ShellScript */ = {
+		AE03118F2A1FE45A0079F804 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
 			files = (
@@ -242,13 +242,14 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
