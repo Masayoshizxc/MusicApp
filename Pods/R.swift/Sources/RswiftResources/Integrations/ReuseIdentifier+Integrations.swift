@@ -6,10 +6,8 @@
 //  From: https://github.com/mac-cain13/R.swift
 //
 
-
 #if os(iOS) || os(tvOS)
 import UIKit
-
 
 extension UITableView {
 
@@ -63,7 +61,6 @@ extension UITableView {
         dequeueReusableCell(withIdentifier: identifier.identifier, for: indexPath) as? Identifier.Reusable
     }
 
-
     /**
      Returns a typed reusable header or footer view located by its identifier.
 
@@ -75,7 +72,6 @@ extension UITableView {
         dequeueReusableHeaderFooterView(withIdentifier: identifier.identifier) as? Identifier.Reusable
     }
 }
-
 
 extension UICollectionView {
 

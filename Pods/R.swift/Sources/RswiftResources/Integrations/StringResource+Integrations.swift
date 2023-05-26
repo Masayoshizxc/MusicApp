@@ -118,7 +118,6 @@ extension String {
     }
 }
 
-
 @available(macOS 10, iOS 13, tvOS 13, watchOS 6, *)
 extension Text {
     public init(_ resource: StringResource) {

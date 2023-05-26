@@ -5,10 +5,8 @@
 //  Created by Mathijs Kadijk on 08-01-16.
 //
 
-
 #if os(iOS) || os(tvOS)
 import UIKit
-
 
 extension NibReferenceContainer {
 
@@ -18,12 +16,12 @@ extension NibReferenceContainer {
      - parameter ownerOrNil: The owner, if the owner parameter is nil, connections to File's Owner are not permitted.
      - parameter options: Options are identical to the options specified with` -[NSBundle loadNibNamed:owner:options:]`
      */
-    public func callAsFunction(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FirstView? {
+    public func callAsFunction(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> FirstView? {
         UINib(nibName: name, bundle: bundle).instantiate(withOwner: ownerOrNil, options: optionsOrNil).first as? FirstView
     }
 
     @available(*, deprecated, message: "renamed to (withOwner:options:)")
-    public func callAsFunction(owner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FirstView? {
+    public func callAsFunction(owner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> FirstView? {
         UINib(nibName: name, bundle: bundle).instantiate(withOwner: ownerOrNil, options: optionsOrNil).first as? FirstView
     }
 
@@ -33,12 +31,12 @@ extension NibReferenceContainer {
      - parameter ownerOrNil: The owner, if the owner parameter is nil, connections to File's Owner are not permitted.
      - parameter options: Options are identical to the options specified with` -[NSBundle loadNibNamed:owner:options:]`
      */
-    public func firstView(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FirstView? {
+    public func firstView(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> FirstView? {
         UINib(nibName: name, bundle: bundle).instantiate(withOwner: ownerOrNil, options: optionsOrNil).first as? FirstView
     }
 
     @available(*, deprecated, renamed: "firstView(withOwner:options:)")
-    public func firstView(owner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FirstView? {
+    public func firstView(owner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> FirstView? {
         UINib(nibName: name, bundle: bundle).instantiate(withOwner: ownerOrNil, options: optionsOrNil).first as? FirstView
     }
 
@@ -50,7 +48,7 @@ extension NibReferenceContainer {
 
      - returns: An array containing the top-level objects from the NIB
      */
-    public func instantiate(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = [:]) -> [Any] {
+    public func instantiate(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey: Any]? = [:]) -> [Any] {
         UINib(nibName: name, bundle: bundle).instantiate(withOwner: ownerOrNil, options: optionsOrNil)
     }
 }

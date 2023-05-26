@@ -21,7 +21,6 @@ extension Color {
     }
 }
 
-
 #if os(iOS) || os(tvOS)
 import UIKit
 

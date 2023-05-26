@@ -16,7 +16,7 @@ import Foundation
 
 extension StringParam: Unifiable {
     public func unify(_ other: StringParam) -> StringParam? {
-        if let name = name, let otherName = other.name , name != otherName {
+        if let name = name, let otherName = other.name, name != otherName {
             return nil
         }
 
@@ -34,8 +34,7 @@ extension FormatPart: Unifiable {
         case let (.spec(l), .spec(r)):
             if let spec = l.unify(r) {
                 return .spec(spec)
-            }
-            else {
+            } else {
                 return nil
             }
 

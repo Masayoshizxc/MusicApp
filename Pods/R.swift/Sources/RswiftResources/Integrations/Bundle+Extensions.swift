@@ -72,8 +72,7 @@ extension Bundle {
         // Note: key might not exist in chosen language (in that case, key will be shown)
         for language in languages {
             if let lproj = hostingBundle.url(forResource: language, withExtension: "lproj"),
-               let lbundle = Bundle(url: lproj)
-            {
+               let lbundle = Bundle(url: lproj) {
                 let strings = lbundle.url(forResource: tableName, withExtension: "strings")
                 let stringsdict = lbundle.url(forResource: tableName, withExtension: "stringsdict")
 

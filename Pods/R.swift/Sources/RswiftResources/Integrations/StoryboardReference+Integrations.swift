@@ -8,7 +8,6 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-
 extension StoryboardReference where Self: InitialControllerContainer {
     /**
      Instantiates and returns the initial view controller in the view controller graph.
@@ -18,7 +17,6 @@ extension StoryboardReference where Self: InitialControllerContainer {
     public func instantiateInitialViewController() -> InitialController? {
         UIStoryboard(name: name, bundle: bundle).instantiateInitialViewController() as? InitialController
     }
-
 
     /**
      Instantiates and returns the initial view controller in the view controller graph with native dependency injection.
@@ -42,7 +40,6 @@ extension StoryboardViewControllerIdentifier {
     public func callAsFunction() -> ViewController? {
         UIStoryboard(name: storyboard, bundle: bundle).instantiateViewController(withIdentifier: identifier) as? ViewController
     }
-
 
     /**
      Instantiates and returns the view controller with the specified resource (`R.storyboard.*.*`) and native dependency injection.
@@ -69,7 +66,6 @@ extension UIStoryboard {
         self.init(name: resource.name, bundle: resource.bundle)
     }
 
-
     /**
      Instantiates and returns the view controller with the specified resource (`R.storyboard.*.*`).
 
@@ -77,16 +73,14 @@ extension UIStoryboard {
 
      - returns: The view controller corresponding to the specified resource (`R.storyboard.*.*`). If no view controller is associated, this method throws an exception.
      */
-    public func instantiateViewController<ViewController: UIViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<ViewController>) -> ViewController?  {
+    public func instantiateViewController<ViewController: UIViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<ViewController>) -> ViewController? {
         self.instantiateViewController(withIdentifier: identifier.identifier) as? ViewController
     }
 }
 #endif
 
-
 #if canImport(AppKit) && !targetEnvironment(macCatalyst)
 import AppKit
-
 
 extension StoryboardReference where Self: InitialControllerContainer {
     /**
@@ -97,7 +91,6 @@ extension StoryboardReference where Self: InitialControllerContainer {
     public func instantiateInitialViewController() -> InitialController? {
         NSStoryboard(name: name, bundle: bundle).instantiateInitialController() as? InitialController
     }
-
 
     /**
      Instantiates and returns the initial view controller in the view controller graph with native dependency injection.
@@ -120,7 +113,6 @@ extension StoryboardViewControllerIdentifier {
     public func callAsFunction() -> ViewController? {
         NSStoryboard(name: storyboard, bundle: bundle).instantiateController(withIdentifier: identifier) as? ViewController
     }
-
 
     /**
      Instantiates and returns the view controller with the specified resource (`R.storyboard.*.*`) and native dependency injection.
@@ -145,7 +137,6 @@ extension NSStoryboard {
     public convenience init<Reference: StoryboardReference>(resource: Reference) {
         self.init(name: resource.name, bundle: resource.bundle)
     }
-
 
     /**
      Instantiates and returns the view controller with the specified resource (`R.storyboard.*.*`).

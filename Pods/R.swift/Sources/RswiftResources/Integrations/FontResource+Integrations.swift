@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
 extension Font {
 
@@ -69,7 +68,6 @@ public extension UIFont {
     }
 }
 #endif
-
 
 #if canImport(UIKit)
 import UIKit

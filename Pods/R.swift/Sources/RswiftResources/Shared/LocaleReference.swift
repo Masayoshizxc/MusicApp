@@ -31,7 +31,7 @@ public enum LocaleReference: Hashable {
 
 extension LocaleReference {
     public init(url: URL) {
-        if let localeComponent = url.pathComponents.dropLast().last , localeComponent.hasSuffix(".lproj") {
+        if let localeComponent = url.pathComponents.dropLast().last, localeComponent.hasSuffix(".lproj") {
             let lang = localeComponent.replacingOccurrences(of: ".lproj", with: "")
 
             if lang == "Base" {
@@ -39,8 +39,7 @@ extension LocaleReference {
             } else {
                 self = .language(lang)
             }
-        }
-        else {
+        } else {
             self = .none
         }
     }

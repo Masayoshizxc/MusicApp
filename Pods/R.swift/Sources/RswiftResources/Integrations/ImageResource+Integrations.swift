@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
 extension Image {
 
@@ -21,7 +20,6 @@ extension Image {
         self.init(resource.name, bundle: resource.bundle)
     }
 
-
     /**
      Creates a labelled image from this resource (`R.image.*`), with the specified label
 
@@ -31,7 +29,6 @@ extension Image {
     public init(_ resource: ImageResource, label: Text) {
         self.init(resource.name, bundle: resource.bundle, label: label)
     }
-
 
     /**
      Creates an unlabelled, decorative image from this resource (`R.image.*`).
@@ -59,7 +56,6 @@ extension Image {
         self.init(resource.name, variableValue: variableValue, bundle: resource.bundle)
     }
 
-
     /**
      Creates a labelled image from this resource (`R.image.*`), with the specified label and variable value.
 
@@ -70,7 +66,6 @@ extension Image {
     public init(_ resource: ImageResource, variableValue: Double?, label: Text) {
         self.init(resource.name, variableValue: variableValue, bundle: resource.bundle, label: label)
     }
-
 
     /**
      Creates an unlabelled, decorative image from this resource (`R.image.*`), with variable value.
@@ -83,7 +78,6 @@ extension Image {
     }
 }
 #endif
-
 
 #if os(iOS) || os(tvOS)
 import UIKit
@@ -132,7 +126,6 @@ extension UIImage {
     }
 }
 #endif
-
 
 // Xcode 14 doesn't recognize `variableValue` init, Xcode 14.1 does know `variableValue`
 // Xcode 14.1 is first to ship with swift 5.7.1

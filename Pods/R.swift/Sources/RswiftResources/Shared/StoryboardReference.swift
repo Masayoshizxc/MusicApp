@@ -17,12 +17,10 @@ public protocol StoryboardReference {
     var bundle: Bundle { get }
 }
 
-
 public protocol InitialControllerContainer {
     /// Type of the inital controller
     associatedtype InitialController
 }
-
 
 /// Storyboard view controller identifier
 public struct StoryboardViewControllerIdentifier<ViewController> {
@@ -167,7 +165,6 @@ public struct TypedSegue<Segue, Source, Destination> {
         self.identifier = identifier
     }
 }
-
 
 @available(*, renamed: "ReuseIdentifierContainer")
 public protocol ReuseIdentifierType {}

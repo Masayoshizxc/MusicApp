@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E15DC4D70679D70CC916157 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7F0182D357AB028143B1 /* Pods_MusicApp.framework */; };
+		AE1FC4F92A210D8A002B222C /* Extension + ColorDarkLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */; };
 		AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */; };
 		AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */; };
 		AE58B1E02A1E8B3E0000D620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F22A1E8C160000D620 /* Coordinator.swift */; };
 		AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */; };
 		AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE69EC402A208BB600F8A15B /* .swiftlint.yml */; };
+		AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69EC422A20921200F8A15B /* BaseViewController.swift */; };
 		AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCB5232A1E905F00255AFC /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,7 @@
 		637F7F0182D357AB028143B1 /* Pods_MusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB0E603400209AE04CAD96D /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF7BCB588EC8A4BE5ABE2AF /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ColorDarkLight.swift"; sourceTree = "<group>"; };
 		AE58B1D82A1E8B3E0000D620 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		AE58B1F22A1E8C160000D620 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		AE69EC402A208BB600F8A15B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AE69EC422A20921200F8A15B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AECCB5232A1E905F00255AFC /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE1FC4F62A210D5A002B222C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AE58B1CF2A1E8B3E0000D620 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +103,9 @@
 				AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */,
 				AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */,
 				AECCB5232A1E905F00255AFC /* R.generated.swift */,
-				AE58B1F02A1E8C080000D620 /* Components */,
 				AE58B1EF2A1E8C010000D620 /* Reusable */,
+				AE1FC4F62A210D5A002B222C /* Extensions */,
+				AE58B1F02A1E8C080000D620 /* Components */,
 				AE58B1E42A1E8B400000D620 /* Assets.xcassets */,
 				AE58B1E62A1E8B400000D620 /* LaunchScreen.storyboard */,
 				AE58B1E92A1E8B400000D620 /* Info.plist */,
@@ -103,6 +116,7 @@
 		AE58B1EF2A1E8C010000D620 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				AE69EC422A20921200F8A15B /* BaseViewController.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -248,7 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --fix && ${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1FC4F92A210D8A002B222C /* Extension + ColorDarkLight.swift in Sources */,
 				AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */,
 				AE58B1E02A1E8B3E0000D620 /* ViewController.swift in Sources */,
+				AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */,
 				AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */,
 				AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */,
 				AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */,

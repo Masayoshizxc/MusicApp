@@ -11,7 +11,7 @@ public protocol Unifiable {
     func unify(_ other: Self) -> Self?
 }
 
-extension Array where Element : Unifiable {
+extension Array where Element: Unifiable {
     public func unify(_ other: [Element]) -> [Element]? {
         var result = self
 
@@ -19,12 +19,10 @@ extension Array where Element : Unifiable {
             if let left = result[safe: ix] {
                 if let unified = left.unify(right) {
                     result[ix] = unified
-                }
-                else {
+                } else {
                     return nil
                 }
-            }
-            else {
+            } else {
                 result.append(right)
             }
         }
