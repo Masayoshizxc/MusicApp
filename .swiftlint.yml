@@ -1,9 +1,5 @@
 
 excluded:
-  - MyApp/Article/ArticleListViewController.swift
-  - MyApp/Article/ArticleCell.swift
-  ...
-  - MyWidget/Widget.swift
   - Carthage
   - Pods
   - R.generated.swift

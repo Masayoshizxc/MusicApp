@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E15DC4D70679D70CC916157 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7F0182D357AB028143B1 /* Pods_MusicApp.framework */; };
-		AE0311912A1FE7090079F804 /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE0311902A1FE7090079F804 /* swiftlint.yml */; };
 		AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */; };
 		AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */; };
 		AE58B1E02A1E8B3E0000D620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */; };
@@ -16,6 +15,7 @@
 		AE58B1E82A1E8B400000D620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58B1E62A1E8B400000D620 /* LaunchScreen.storyboard */; };
 		AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F22A1E8C160000D620 /* Coordinator.swift */; };
 		AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */; };
+		AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE69EC402A208BB600F8A15B /* .swiftlint.yml */; };
 		AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCB5232A1E905F00255AFC /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,6 @@
 		637F7F0182D357AB028143B1 /* Pods_MusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB0E603400209AE04CAD96D /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF7BCB588EC8A4BE5ABE2AF /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
-		AE0311902A1FE7090079F804 /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		AE58B1D82A1E8B3E0000D620 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		AE58B1E92A1E8B400000D620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE58B1F22A1E8C160000D620 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		AE69EC402A208BB600F8A15B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AECCB5232A1E905F00255AFC /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 		AE58B1CF2A1E8B3E0000D620 = {
 			isa = PBXGroup;
 			children = (
-				AE0311902A1FE7090079F804 /* swiftlint.yml */,
+				AE69EC402A208BB600F8A15B /* .swiftlint.yml */,
 				AE58B1DA2A1E8B3E0000D620 /* MusicApp */,
 				AE58B1D92A1E8B3E0000D620 /* Products */,
 				76C7BFAB708F99619AC063AB /* Pods */,
@@ -136,7 +136,7 @@
 				AE58B1D52A1E8B3E0000D620 /* Frameworks */,
 				AE58B1D62A1E8B3E0000D620 /* Resources */,
 				6F94E57445806D9CED3D55EF /* [CP] Embed Pods Frameworks */,
-				AE03118F2A1FE45A0079F804 /* SwiftLint */,
+				AE69EC3F2A2088DA00F8A15B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -185,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */,
 				AE58B1E82A1E8B400000D620 /* LaunchScreen.storyboard in Resources */,
-				AE0311912A1FE7090079F804 /* swiftlint.yml in Resources */,
 				AE58B1E52A1E8B400000D620 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,16 +233,15 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE03118F2A1FE45A0079F804 /* SwiftLint */ = {
+		AE69EC3F2A2088DA00F8A15B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
 			);
-			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -250,7 +249,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
