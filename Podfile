@@ -9,4 +9,5 @@ target 'MusicApp' do
 pod 'R.swift'
 pod 'SnapKit'
 pod 'SwiftLint'
+pod 'TransitionButton'
 end

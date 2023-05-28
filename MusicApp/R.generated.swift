@@ -54,7 +54,19 @@ struct _R {
     let bundle: Foundation.Bundle
 
       var tint: RswiftResources.ColorResource { .init(name: "TintColor", path: [], bundle: bundle)}
-      var pinkBack: RswiftResources.ColorResource { .init(name: "Pink", path: [], bundle: bundle)}
+      var orange: RswiftResources.ColorResource { .init(name: "Orange", path: [], bundle: bundle)}
+      var purple: RswiftResources.ColorResource { .init(name: "Purple", path: [], bundle: bundle)}
+      var popGenre: RswiftResources.ColorResource { .init(name: "PopGenre", path: [], bundle: bundle)}
+      var jazzGenre: RswiftResources.ColorResource { .init(name: "JazzGenre", path: [], bundle: bundle)}
+      var indieGenre: RswiftResources.ColorResource { .init(name: "IndieGenre", path: [], bundle: bundle)}
+      var rapGenre: RswiftResources.ColorResource { .init(name: "RapGenre", path: [], bundle: bundle)}
+      var rockGenre: RswiftResources.ColorResource { .init(name: "RockGenre", path: [], bundle: bundle)}
+      var hiphopGenre: RswiftResources.ColorResource { .init(name: "HiphopGenre", path: [], bundle: bundle)}
+      var homePage: RswiftResources.ColorResource { .init(name: "HomePage", path: [], bundle: bundle)}
+      var searchPage: RswiftResources.ColorResource { .init(name: "SearchPage", path: [], bundle: bundle)}
+      var libraryPage: RswiftResources.ColorResource { .init(name: "LibraryPage", path: [], bundle: bundle)}
+      var tabbarSelected: RswiftResources.ColorResource { .init(name: "TabbarSelected", path: [], bundle: bundle)}
+      var tabbarUnselected: RswiftResources.ColorResource { .init(name: "TabbarUnselected", path: [], bundle: bundle)}
 //
 //    /// Color `yellow`.
 //    var yellow: RswiftResources.ColorResource { .init(name: "yellow", path: [], bundle: bundle) }
@@ -65,9 +77,18 @@ struct _R {
   struct image {
     let bundle: Foundation.Bundle
       var play: RswiftResources.ImageResource { .init(name: "PlayIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var popGenre: RswiftResources.ImageResource { .init(name: "popGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var jazzGenre: RswiftResources.ImageResource { .init(name: "jazzGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var indieGenre: RswiftResources.ImageResource { .init(name: "indieGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var rapGenre: RswiftResources.ImageResource { .init(name: "rapGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var rockGenre: RswiftResources.ImageResource { .init(name: "rockGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var hiphopGenre: RswiftResources.ImageResource { .init(name: "hiphopGenre", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var homePage: RswiftResources.ImageResource { .init(name: "homeIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var searchPage: RswiftResources.ImageResource { .init(name: "searchIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var libraryPage: RswiftResources.ImageResource { .init(name: "libraryIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var burgerButton: RswiftResources.ImageResource { .init(name: "burgerButton", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var notificationsButton: RswiftResources.ImageResource { .init(name: "notificationsButton", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
 
-//    /// Image `wallet`.
-//    var wallet: RswiftResources.ImageResource { .init(name: "wallet", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.

@@ -73,8 +73,8 @@ extension UIStoryboard {
 
      - returns: The view controller corresponding to the specified resource (`R.storyboard.*.*`). If no view controller is associated, this method throws an exception.
      */
-    public func instantiateViewController<ViewController: UIViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<ViewController>) -> ViewController? {
-        self.instantiateViewController(withIdentifier: identifier.identifier) as? ViewController
+    public func instantiateViewController<AuthViewController: UIViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<AuthViewController>) -> AuthViewController? {
+        self.instantiateViewController(withIdentifier: identifier.identifier) as? AuthViewController
     }
 }
 #endif
@@ -110,8 +110,8 @@ extension StoryboardViewControllerIdentifier {
 
      - returns: The view controller corresponding to the specified resource (`R.storyboard.*.*`). If no view controller is associated, this method throws an exception.
      */
-    public func callAsFunction() -> ViewController? {
-        NSStoryboard(name: storyboard, bundle: bundle).instantiateController(withIdentifier: identifier) as? ViewController
+    public func callAsFunction() -> AuthViewController? {
+        NSStoryboard(name: storyboard, bundle: bundle).instantiateController(withIdentifier: identifier) as? AuthViewController
     }
 
     /**
@@ -121,7 +121,7 @@ extension StoryboardViewControllerIdentifier {
 
      - returns: The view controller corresponding to the specified resource (`R.storyboard.*.*`).
      */
-    public func callAsFunction(creator: @escaping (NSCoder) -> ViewController?) -> ViewController? where ViewController: NSViewController {
+    public func callAsFunction(creator: @escaping (NSCoder) -> AuthViewController?) -> AuthViewController? where AuthViewController: NSViewController {
         NSStoryboard(name: storyboard, bundle: bundle).instantiateController(identifier: identifier, creator: creator)
     }
 }
@@ -145,8 +145,8 @@ extension NSStoryboard {
 
      - returns: The view controller corresponding to the specified resource (`R.storyboard.*.*`). If no view controller is associated, this method throws an exception.
      */
-    public func instantiateController<ViewController: NSViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<ViewController>) -> ViewController? {
-        self.instantiateController(withIdentifier: identifier.identifier) as? ViewController
+    public func instantiateController<AuthViewController: NSViewController>(withIdentifier identifier: StoryboardViewControllerIdentifier<AuthViewController>) -> AuthViewController? {
+        self.instantiateController(withIdentifier: identifier.identifier) as? AuthViewController
     }
 }
 #endif

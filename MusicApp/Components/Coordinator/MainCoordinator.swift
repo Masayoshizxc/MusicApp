@@ -20,9 +20,21 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc = ViewController()
+//        print("MainCoordinator")
+//        let child = TabBarCoordinator(navigationController: navigationController)
+//        childCoordinators.append(child)
+//        child.parentCoordinator = self
+//        child.start()
+
+        let vc = AuthViewController()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
 
+    func goTabbar() {
+        let child = TabBarCoordinator(navigationController: navigationController)
+        childCoordinators.append(child)
+        child.parentCoordinator = self
+        child.start()
+    }
 }

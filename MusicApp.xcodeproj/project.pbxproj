@@ -9,9 +9,19 @@
 /* Begin PBXBuildFile section */
 		7E15DC4D70679D70CC916157 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7F0182D357AB028143B1 /* Pods_MusicApp.framework */; };
 		AE1FC4F92A210D8A002B222C /* Extension + ColorDarkLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */; };
+		AE1FC4FB2A21187B002B222C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC4FA2A21187B002B222C /* HomeViewController.swift */; };
+		AE1FC5012A2124D4002B222C /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5002A2124D4002B222C /* AuthTextField.swift */; };
+		AE1FC5062A232DC1002B222C /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5052A232DC1002B222C /* HomeModel.swift */; };
+		AE1FC50A2A233D99002B222C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5092A233D99002B222C /* HomeCoordinator.swift */; };
+		AE1FC50D2A23B821002B222C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC50C2A23B821002B222C /* TabBarController.swift */; };
+		AE1FC50F2A23BAD5002B222C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC50E2A23BAD5002B222C /* TabBarCoordinator.swift */; };
+		AE1FC5112A23BE2C002B222C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5102A23BE2C002B222C /* SearchCoordinator.swift */; };
+		AE1FC5142A23BEBC002B222C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5132A23BEBC002B222C /* SearchViewController.swift */; };
+		AE1FC5192A23C017002B222C /* LibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC5182A23C017002B222C /* LibraryCoordinator.swift */; };
+		AE1FC51B2A23C06C002B222C /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FC51A2A23C06C002B222C /* LibraryViewController.swift */; };
 		AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */; };
 		AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */; };
-		AE58B1E02A1E8B3E0000D620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */; };
+		AE58B1E02A1E8B3E0000D620 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1DF2A1E8B3E0000D620 /* AuthViewController.swift */; };
 		AE58B1E52A1E8B400000D620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58B1E42A1E8B400000D620 /* Assets.xcassets */; };
 		AE58B1E82A1E8B400000D620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58B1E62A1E8B400000D620 /* LaunchScreen.storyboard */; };
 		AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F22A1E8C160000D620 /* Coordinator.swift */; };
@@ -26,10 +36,20 @@
 		6EB0E603400209AE04CAD96D /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF7BCB588EC8A4BE5ABE2AF /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ColorDarkLight.swift"; sourceTree = "<group>"; };
+		AE1FC4FA2A21187B002B222C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE1FC5002A2124D4002B222C /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		AE1FC5052A232DC1002B222C /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		AE1FC5092A233D99002B222C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		AE1FC50C2A23B821002B222C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AE1FC50E2A23BAD5002B222C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		AE1FC5102A23BE2C002B222C /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		AE1FC5132A23BEBC002B222C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AE1FC5182A23C017002B222C /* LibraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
+		AE1FC51A2A23C06C002B222C /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		AE58B1D82A1E8B3E0000D620 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE58B1DF2A1E8B3E0000D620 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AE58B1E42A1E8B400000D620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE58B1E72A1E8B400000D620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE58B1E92A1E8B400000D620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +97,106 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AE1FC4FC2A21225E002B222C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AE58B1DF2A1E8B3E0000D620 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AE1FC4FD2A212266002B222C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC5092A233D99002B222C /* HomeCoordinator.swift */,
+				AE1FC5042A232D71002B222C /* View Model */,
+				AE1FC5032A232D6D002B222C /* Model */,
+				AE1FC5022A232D67002B222C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AE1FC4FE2A21226B002B222C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC5122A23BEB4002B222C /* View */,
+				AE1FC5102A23BE2C002B222C /* SearchCoordinator.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AE1FC4FF2A212278002B222C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC5172A23C008002B222C /* ViewModel */,
+				AE1FC5162A23C003002B222C /* Model */,
+				AE1FC5152A23BFFF002B222C /* View */,
+				AE1FC5182A23C017002B222C /* LibraryCoordinator.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		AE1FC5022A232D67002B222C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC4FA2A21187B002B222C /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE1FC5032A232D6D002B222C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC5052A232DC1002B222C /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE1FC5042A232D71002B222C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AE1FC50B2A23B810002B222C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC50C2A23B821002B222C /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AE1FC5122A23BEB4002B222C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC5132A23BEBC002B222C /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE1FC5152A23BFFF002B222C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC51A2A23C06C002B222C /* LibraryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE1FC5162A23C003002B222C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE1FC5172A23C008002B222C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AE58B1CF2A1E8B3E0000D620 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +221,6 @@
 			children = (
 				AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */,
 				AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */,
-				AE58B1DF2A1E8B3E0000D620 /* ViewController.swift */,
 				AECCB5232A1E905F00255AFC /* R.generated.swift */,
 				AE58B1EF2A1E8C010000D620 /* Reusable */,
 				AE1FC4F62A210D5A002B222C /* Extensions */,
@@ -117,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				AE69EC422A20921200F8A15B /* BaseViewController.swift */,
+				AE1FC5002A2124D4002B222C /* AuthTextField.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -124,6 +244,11 @@
 		AE58B1F02A1E8C080000D620 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				AE1FC50B2A23B810002B222C /* TabBar */,
+				AE1FC4FF2A212278002B222C /* Library */,
+				AE1FC4FE2A21226B002B222C /* Search */,
+				AE1FC4FD2A212266002B222C /* Home */,
+				AE1FC4FC2A21225E002B222C /* Auth */,
 				AE58B1F12A1E8C0D0000D620 /* Coordinator */,
 			);
 			path = Components;
@@ -134,6 +259,7 @@
 			children = (
 				AE58B1F22A1E8C160000D620 /* Coordinator.swift */,
 				AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */,
+				AE1FC50E2A23BAD5002B222C /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -150,7 +276,7 @@
 				AE58B1D52A1E8B3E0000D620 /* Frameworks */,
 				AE58B1D62A1E8B3E0000D620 /* Resources */,
 				6F94E57445806D9CED3D55EF /* [CP] Embed Pods Frameworks */,
-				AE69EC3F2A2088DA00F8A15B /* ShellScript */,
+				AE69EC3F2A2088DA00F8A15B /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -247,7 +373,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE69EC3F2A2088DA00F8A15B /* ShellScript */ = {
+		AE69EC3F2A2088DA00F8A15B /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,6 +382,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -272,12 +399,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1FC4F92A210D8A002B222C /* Extension + ColorDarkLight.swift in Sources */,
+				AE1FC5112A23BE2C002B222C /* SearchCoordinator.swift in Sources */,
+				AE1FC50D2A23B821002B222C /* TabBarController.swift in Sources */,
+				AE1FC5192A23C017002B222C /* LibraryCoordinator.swift in Sources */,
 				AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */,
-				AE58B1E02A1E8B3E0000D620 /* ViewController.swift in Sources */,
+				AE1FC5062A232DC1002B222C /* HomeModel.swift in Sources */,
+				AE58B1E02A1E8B3E0000D620 /* AuthViewController.swift in Sources */,
+				AE1FC5012A2124D4002B222C /* AuthTextField.swift in Sources */,
+				AE1FC50A2A233D99002B222C /* HomeCoordinator.swift in Sources */,
 				AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */,
 				AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */,
+				AE1FC5142A23BEBC002B222C /* SearchViewController.swift in Sources */,
+				AE1FC4FB2A21187B002B222C /* HomeViewController.swift in Sources */,
+				AE1FC50F2A23BAD5002B222C /* TabBarCoordinator.swift in Sources */,
 				AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */,
 				AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */,
+				AE1FC51B2A23C06C002B222C /* LibraryViewController.swift in Sources */,
 				AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +562,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +591,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
