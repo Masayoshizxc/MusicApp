@@ -18,8 +18,10 @@ enum TabBarItems: CaseIterable {
         case .first:
             return .init(
                 title: nil,
-                image: R.image.homePage(), tag: 1
+                image: R.image.homePage(),
+                tag: 1
             )
+
         case .second:
             return .init(
                 title: nil,
@@ -45,16 +47,15 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        configureTabs()
         setupConstraints()
+        configureTabs()
         UITabBar.appearance().tintColor = R.color.tabbarSelected()
         UITabBar.appearance().unselectedItemTintColor = R.color.tabbarUnselected()
 
         navigationItem.hidesBackButton = true
         navigationController?.navigationBar.backgroundColor = R.color.tint()
-        tabBarController?.tabBar.isTranslucent = false
-        tabBarController?.tabBar.backgroundColor = R.color.tint()
+        tabBarController?.tabBar.isTranslucent = true
+        tabBarController?.tabBar.backgroundColor = .none
 
     }
 
@@ -78,39 +79,46 @@ class TabBarController: UITabBarController {
             searchCoordinator.navigationController,
             libraryCoordinator.navigationController
         ]
+
+        let tab = UITabBarAppearance()
+        tab.backgroundEffect = .none
+        tab.shadowColor = .clear
+
+        tab.stackedItemWidth = 50
+        tab.stackedItemSpacing = 50
+//        tab.stackedItemPositioning =
+
+        tabBar.standardAppearance = tab
+//        tabBar.scrollEdgeAppearance = tab
+
     }
 
     private func setupConstraints() {
-        let positionOnX: CGFloat = 10
-        let positionOnY: CGFloat = 14
+        let positionOnX: CGFloat = 59
+        let positionOnY: CGFloat = 22
         let width = tabBar.bounds.width - positionOnX * 2
         let height = tabBar.bounds.height + positionOnY * 2
 
-        let roundLayer = CAShapeLayer()
-
-        let bezierPath = UIBezierPath(
-            roundedRect: CGRect(
-                x: positionOnX,
-                y: tabBar.bounds.minY - positionOnY,
-                width: width,
-                height: height
-            ),
-            cornerRadius: height / 2
-        )
-
-        roundLayer.path = bezierPath.cgPath
-
-        tabBar.layer.insertSublayer(roundLayer, at: 0)
-
-        tabBar.itemWidth = width / 5
-        tabBar.itemPositioning = .centered
-
-        roundLayer.fillColor = UIColor.white.cgColor
-//        tabBar.snp.makeConstraints {make in
-//            make.width.equalTo(296)
-//            make.height.equalTo(70)
-//            make.bottom.equalToSuperview().inset(22)
-//            make.left.right.equalToSuperview().inset(59)
+        let bg = UIView()
+        bg.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+        bg.layer.cornerRadius = 16
+        bg.layer.opacity = 40
+        tabBar.addSubview(bg)
+        let clicked = UIView()
+        clicked.backgroundColor = R.color.tint()
+        clicked.layer.cornerRadius = 15
+        bg.snp.makeConstraints {make in
+            make.width.equalTo(296)
+            make.height.equalTo(70)
+            make.left.right.equalToSuperview().inset(59)
+            make.bottom.equalToSuperview().inset(30)
+        }
+//        clicked.snp.makeConstraints {make in
+//            make.width.equalTo(106)
+//            make.height.equalTo(83)
 //        }
+//        bg.addSubview(clicked)
+
     }
+
 }

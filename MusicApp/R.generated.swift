@@ -143,11 +143,12 @@ struct _R {
   struct font: Sequence {
     let bundle: Foundation.Bundle
 
+      var robotoMedium: RswiftResources.FontResource { .init(name: "Roboto-Medium", bundle: bundle, filename: "Roboto_Medium.ttf")}
     /// Font `Commissioner-SemiBold`.
     var commissionerSemiBold: RswiftResources.FontResource { .init(name: "Commissioner-SemiBold", bundle: bundle, filename: "Commissioner-SemiBold.ttf") }
 
     func makeIterator() -> IndexingIterator<[RswiftResources.FontResource]> {
-      [ commissionerSemiBold].makeIterator()
+      [ commissionerSemiBold, robotoMedium].makeIterator()
     }
     func validate() throws {
       for font in self {

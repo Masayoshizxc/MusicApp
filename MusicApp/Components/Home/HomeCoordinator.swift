@@ -24,6 +24,8 @@ class HomeCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         print("HomeCoordinator")
         let vc = HomeViewController()
         vc.coordinator = self
+        vc.tabBarItem = TabBarItems.first.tabbarItem
+        vc.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 28, bottom: 0, right: -28)
         navigationController.pushViewController(vc, animated: true)
     }
 

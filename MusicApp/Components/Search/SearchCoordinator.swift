@@ -24,6 +24,7 @@ class SearchCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func start() {
         let vc = SearchViewController()
         vc.coordinator = self
+        vc.tabBarItem = TabBarItems.second.tabbarItem
         navigationController.pushViewController(vc, animated: true)
     }
 

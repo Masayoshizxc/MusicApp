@@ -28,6 +28,10 @@
 		AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */; };
 		AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE69EC402A208BB600F8A15B /* .swiftlint.yml */; };
 		AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69EC422A20921200F8A15B /* BaseViewController.swift */; };
+		AE7AD5212A24808C00C73877 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7AD5202A24808C00C73877 /* Roboto-Medium.ttf */; };
+		AE7AD5232A248C4E00C73877 /* Extension + ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5222A248C4E00C73877 /* Extension + ScreenSize.swift */; };
+		AE7AD5252A248C8400C73877 /* Extension + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5242A248C8400C73877 /* Extension + CollectionView.swift */; };
+		AE7AD5272A248D3300C73877 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5262A248D3300C73877 /* Extension + UIView.swift */; };
 		AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCB5232A1E905F00255AFC /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,10 @@
 		AE58B1F42A1E8D760000D620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		AE69EC402A208BB600F8A15B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AE69EC422A20921200F8A15B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AE7AD5202A24808C00C73877 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		AE7AD5222A248C4E00C73877 /* Extension + ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ScreenSize.swift"; sourceTree = "<group>"; };
+		AE7AD5242A248C8400C73877 /* Extension + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CollectionView.swift"; sourceTree = "<group>"; };
+		AE7AD5262A248D3300C73877 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		AECCB5232A1E905F00255AFC /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				AE1FC4F82A210D8A002B222C /* Extension + ColorDarkLight.swift */,
+				AE7AD5222A248C4E00C73877 /* Extension + ScreenSize.swift */,
+				AE7AD5242A248C8400C73877 /* Extension + CollectionView.swift */,
+				AE7AD5262A248D3300C73877 /* Extension + UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 		AE58B1DA2A1E8B3E0000D620 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE7AD51F2A24808000C73877 /* Fonts */,
 				AE58B1DB2A1E8B3E0000D620 /* AppDelegate.swift */,
 				AE58B1DD2A1E8B3E0000D620 /* SceneDelegate.swift */,
 				AECCB5232A1E905F00255AFC /* R.generated.swift */,
@@ -262,6 +274,14 @@
 				AE1FC50E2A23BAD5002B222C /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AE7AD51F2A24808000C73877 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE7AD5202A24808C00C73877 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7AD5212A24808C00C73877 /* Roboto-Medium.ttf in Resources */,
 				AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */,
 				AE58B1E82A1E8B400000D620 /* LaunchScreen.storyboard in Resources */,
 				AE58B1E52A1E8B400000D620 /* Assets.xcassets in Resources */,
@@ -402,14 +423,17 @@
 				AE1FC5112A23BE2C002B222C /* SearchCoordinator.swift in Sources */,
 				AE1FC50D2A23B821002B222C /* TabBarController.swift in Sources */,
 				AE1FC5192A23C017002B222C /* LibraryCoordinator.swift in Sources */,
+				AE7AD5252A248C8400C73877 /* Extension + CollectionView.swift in Sources */,
 				AE58B1F32A1E8C160000D620 /* Coordinator.swift in Sources */,
 				AE1FC5062A232DC1002B222C /* HomeModel.swift in Sources */,
 				AE58B1E02A1E8B3E0000D620 /* AuthViewController.swift in Sources */,
 				AE1FC5012A2124D4002B222C /* AuthTextField.swift in Sources */,
 				AE1FC50A2A233D99002B222C /* HomeCoordinator.swift in Sources */,
 				AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */,
+				AE7AD5232A248C4E00C73877 /* Extension + ScreenSize.swift in Sources */,
 				AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */,
 				AE1FC5142A23BEBC002B222C /* SearchViewController.swift in Sources */,
+				AE7AD5272A248D3300C73877 /* Extension + UIView.swift in Sources */,
 				AE1FC4FB2A21187B002B222C /* HomeViewController.swift in Sources */,
 				AE1FC50F2A23BAD5002B222C /* TabBarCoordinator.swift in Sources */,
 				AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */,

@@ -30,4 +30,9 @@ class TabBarCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(vc, animated: false)
     }
 
+    func login() {
+        let vc = AuthViewController()
+
+    }
+
 }

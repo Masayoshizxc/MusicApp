@@ -24,6 +24,8 @@ class LibraryCoordinator: NSObject, Coordinator, UINavigationControllerDelegate 
     func start() {
         let vc = LibraryViewController()
         vc.coordinator = self
+        vc.tabBarItem = TabBarItems.third.tabbarItem
+        vc.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: -28, bottom: 0, right: 28)
         navigationController.pushViewController(vc, animated: true)
     }
 
