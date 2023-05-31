@@ -67,6 +67,12 @@ struct _R {
       var libraryPage: RswiftResources.ColorResource { .init(name: "LibraryPage", path: [], bundle: bundle)}
       var tabbarSelected: RswiftResources.ColorResource { .init(name: "TabbarSelected", path: [], bundle: bundle)}
       var tabbarUnselected: RswiftResources.ColorResource { .init(name: "TabbarUnselected", path: [], bundle: bundle)}
+      var suggest80: RswiftResources.ColorResource { .init(name: "Sug80", path: [], bundle: bundle)}
+      var suggestAesthetics: RswiftResources.ColorResource { .init(name: "SugAes", path: [], bundle: bundle)}
+      var suggestViral: RswiftResources.ColorResource { .init(name: "SugVir", path: [], bundle: bundle)}
+      var suggestChill: RswiftResources.ColorResource { .init(name: "SugChi", path: [], bundle: bundle)}
+      var suggestLove: RswiftResources.ColorResource { .init(name: "SugLov", path: [], bundle: bundle)}
+      var premierBackground: RswiftResources.ColorResource { .init(name: "PremierBackground", path: [], bundle: bundle)}
 //
 //    /// Color `yellow`.
 //    var yellow: RswiftResources.ColorResource { .init(name: "yellow", path: [], bundle: bundle) }
@@ -88,6 +94,17 @@ struct _R {
       var libraryPage: RswiftResources.ImageResource { .init(name: "libraryIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
       var burgerButton: RswiftResources.ImageResource { .init(name: "burgerButton", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
       var notificationsButton: RswiftResources.ImageResource { .init(name: "notificationsButton", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var avatar: RswiftResources.ImageResource { .init(name: "avatar", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var suggest80: RswiftResources.ImageResource { .init(name: "sug80", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var suggestAesthetic: RswiftResources.ImageResource { .init(name: "sugAes", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var suggestViral: RswiftResources.ImageResource { .init(name: "sugVir", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var suggestChill: RswiftResources.ImageResource { .init(name: "sugChi", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var suggestLove: RswiftResources.ImageResource { .init(name: "sugLov", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var premierFirst: RswiftResources.ImageResource { .init(name: "premierFirst", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var premierSecond: RswiftResources.ImageResource { .init(name: "premierSecond", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var premierSingFirst: RswiftResources.ImageResource { .init(name: "premierSingFirst", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var premierSingSecond: RswiftResources.ImageResource { .init(name: "premierSingSecond", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var miniPlay: RswiftResources.ImageResource { .init(name: "miniPlay", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
 
   }
 
@@ -142,13 +159,12 @@ struct _R {
   /// This `_R.font` struct is generated, and contains static references to 7 fonts.
   struct font: Sequence {
     let bundle: Foundation.Bundle
-
       var robotoMedium: RswiftResources.FontResource { .init(name: "Roboto-Medium", bundle: bundle, filename: "Roboto_Medium.ttf")}
-    /// Font `Commissioner-SemiBold`.
-    var commissionerSemiBold: RswiftResources.FontResource { .init(name: "Commissioner-SemiBold", bundle: bundle, filename: "Commissioner-SemiBold.ttf") }
-
+      var robotoRegular: RswiftResources.FontResource { .init(name: "Roboto-Regular", bundle: bundle, filename: "Roboto-Regular.ttf")}
+      var robotoBold: RswiftResources.FontResource { .init(name: "Roboto-Bold", bundle: bundle, filename: "Roboto-Bold.ttf")}
+      var robotoLight: RswiftResources.FontResource { .init(name: "Roboto-Light", bundle: bundle, filename: "Roboto-Light.ttf")}
     func makeIterator() -> IndexingIterator<[RswiftResources.FontResource]> {
-      [ commissionerSemiBold, robotoMedium].makeIterator()
+      [robotoMedium, robotoRegular, robotoBold].makeIterator()
     }
     func validate() throws {
       for font in self {

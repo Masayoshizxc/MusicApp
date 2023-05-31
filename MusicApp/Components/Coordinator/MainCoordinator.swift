@@ -19,7 +19,7 @@ class MainCoordinator: Coordinator {
 
     }
 
-    func start() {
+    func goTabbar() {
 //        print("MainCoordinator")
 //        let child = TabBarCoordinator(navigationController: navigationController)
 //        childCoordinators.append(child)
@@ -30,8 +30,8 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
-
-    func goTabbar() {
+//    goTabbar
+    func start() {
         let child = TabBarCoordinator(navigationController: navigationController)
         childCoordinators.append(child)
         child.parentCoordinator = self

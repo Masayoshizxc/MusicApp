@@ -32,6 +32,12 @@
 		AE7AD5232A248C4E00C73877 /* Extension + ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5222A248C4E00C73877 /* Extension + ScreenSize.swift */; };
 		AE7AD5252A248C8400C73877 /* Extension + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5242A248C8400C73877 /* Extension + CollectionView.swift */; };
 		AE7AD5272A248D3300C73877 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5262A248D3300C73877 /* Extension + UIView.swift */; };
+		AE7AD52B2A2634B700C73877 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7AD52A2A2634B700C73877 /* Roboto-Regular.ttf */; };
+		AE7AD52D2A266BDF00C73877 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7AD52C2A266BDF00C73877 /* Roboto-Bold.ttf */; };
+		AE7AD5312A266D6700C73877 /* GenresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5302A266D6700C73877 /* GenresCollectionViewCell.swift */; };
+		AE7AD5332A27217300C73877 /* SuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5322A27217300C73877 /* SuggestionCollectionViewCell.swift */; };
+		AE7AD5352A2725B900C73877 /* PremiersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7AD5342A2725B900C73877 /* PremiersCollectionViewCell.swift */; };
+		AE7AD5372A27282400C73877 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7AD5362A27282400C73877 /* Roboto-Light.ttf */; };
 		AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCB5232A1E905F00255AFC /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +71,12 @@
 		AE7AD5222A248C4E00C73877 /* Extension + ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ScreenSize.swift"; sourceTree = "<group>"; };
 		AE7AD5242A248C8400C73877 /* Extension + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CollectionView.swift"; sourceTree = "<group>"; };
 		AE7AD5262A248D3300C73877 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		AE7AD52A2A2634B700C73877 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AE7AD52C2A266BDF00C73877 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AE7AD5302A266D6700C73877 /* GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE7AD5322A27217300C73877 /* SuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE7AD5342A2725B900C73877 /* PremiersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiersCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE7AD5362A27282400C73877 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		AECCB5232A1E905F00255AFC /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +162,8 @@
 		AE1FC5022A232D67002B222C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AE1FC4FA2A21187B002B222C /* HomeViewController.swift */,
+				AE7AD52F2A266D5A00C73877 /* Cells */,
+				AE7AD52E2A266D5000C73877 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,9 +292,30 @@
 		AE7AD51F2A24808000C73877 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AE7AD52C2A266BDF00C73877 /* Roboto-Bold.ttf */,
+				AE7AD5362A27282400C73877 /* Roboto-Light.ttf */,
+				AE7AD52A2A2634B700C73877 /* Roboto-Regular.ttf */,
 				AE7AD5202A24808C00C73877 /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AE7AD52E2A266D5000C73877 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FC4FA2A21187B002B222C /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE7AD52F2A266D5A00C73877 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE7AD5302A266D6700C73877 /* GenresCollectionViewCell.swift */,
+				AE7AD5342A2725B900C73877 /* PremiersCollectionViewCell.swift */,
+				AE7AD5322A27217300C73877 /* SuggestionCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +381,9 @@
 			files = (
 				AE7AD5212A24808C00C73877 /* Roboto-Medium.ttf in Resources */,
 				AE69EC412A208BB600F8A15B /* .swiftlint.yml in Resources */,
+				AE7AD52D2A266BDF00C73877 /* Roboto-Bold.ttf in Resources */,
+				AE7AD52B2A2634B700C73877 /* Roboto-Regular.ttf in Resources */,
+				AE7AD5372A27282400C73877 /* Roboto-Light.ttf in Resources */,
 				AE58B1E82A1E8B400000D620 /* LaunchScreen.storyboard in Resources */,
 				AE58B1E52A1E8B400000D620 /* Assets.xcassets in Resources */,
 			);
@@ -429,15 +466,18 @@
 				AE58B1E02A1E8B3E0000D620 /* AuthViewController.swift in Sources */,
 				AE1FC5012A2124D4002B222C /* AuthTextField.swift in Sources */,
 				AE1FC50A2A233D99002B222C /* HomeCoordinator.swift in Sources */,
+				AE7AD5352A2725B900C73877 /* PremiersCollectionViewCell.swift in Sources */,
 				AE69EC432A20921200F8A15B /* BaseViewController.swift in Sources */,
 				AE7AD5232A248C4E00C73877 /* Extension + ScreenSize.swift in Sources */,
 				AE58B1DC2A1E8B3E0000D620 /* AppDelegate.swift in Sources */,
 				AE1FC5142A23BEBC002B222C /* SearchViewController.swift in Sources */,
 				AE7AD5272A248D3300C73877 /* Extension + UIView.swift in Sources */,
 				AE1FC4FB2A21187B002B222C /* HomeViewController.swift in Sources */,
+				AE7AD5312A266D6700C73877 /* GenresCollectionViewCell.swift in Sources */,
 				AE1FC50F2A23BAD5002B222C /* TabBarCoordinator.swift in Sources */,
 				AE58B1F52A1E8D760000D620 /* MainCoordinator.swift in Sources */,
 				AE58B1DE2A1E8B3E0000D620 /* SceneDelegate.swift in Sources */,
+				AE7AD5332A27217300C73877 /* SuggestionCollectionViewCell.swift in Sources */,
 				AE1FC51B2A23C06C002B222C /* LibraryViewController.swift in Sources */,
 				AECCB5242A1E905F00255AFC /* R.generated.swift in Sources */,
 			);
